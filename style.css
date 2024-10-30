@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #081b29;
+    --second-bg-color: #112e42;
+    --text-color: #ededed;
+    --main-color: #00abf0;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    background-color: var(--second-bg-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo Styling */
+.navbar .logo {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+/* Menu Items Styling */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar ul li a {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+/* Hover Effect for Menu Items */
+.navbar ul li a:hover {
+    color: var(--main-color);
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 60px 9% 0;
+    color: #fff;
+}
+
+/* Adds margin to the social icon container */
+.home-info .btn-sci .sci {
+    margin-left: 20px;
+}
+
+/* Styles individual social media icons */
+.home-info .btn-sci .sci a {
+    display: inline-flex;
+    padding: 8px;
+    border: 2px solid #7cf03d;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #7cf03d;
+    margin: 0 8px;
+    transition: 0.5s; /* Corrected transition duration to 0.5s */
+}
+
+/* Style for button background and box shadow */
+.home-info .btn-sci .s {
+    background: #7cf03d;
+    color: #1f242d;
+    box-shadow: 0 0 10px #7cf03d;
+}
+
+p2{
+    line-height: 1.8; /* Adjusts spacing between lines */
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background: #7cf03d;
+    border: 2px solid #7cf03d;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #7cf03d;
+    font-size: 16px;
+    color: #1f242d;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn:hover {
+    background: transparent;
+    color: #7cf03d;
+    box-shadow: none;
+}
+
+
+.btn {
+        padding: 6px 20px; 
+        font-size: 1.2rem; 
+        margin-bottom: 20px;
+        margin-top: 20px
+    }
+h2{
+    margin-bottom: 20px;
+        margin-top: 2px
+}
+
+
+.home-img .img-box {
+    width: 22vw; 
+    height: 22vw; 
+    background: red; 
+    border-radius: 50%; 
+    position: relative; 
+    overflow: hidden; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+/* Inner Image */
+.home-img .img-box .img-item {
+    width: 100%; 
+    height: 100%; 
+    background: rgb(8, 3, 39); 
+    border-radius: 50%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    transition: filter 0.5s; 
+    filter: brightness(0.9); 
+}
+
+/* Image Styling */
+.home-img .img-box .img-item img {
+    display: block; /* Block display */
+    width: 85%; /* Adjust width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the container */
+    filter: brightness(1); /* Original brightness */
+}
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
